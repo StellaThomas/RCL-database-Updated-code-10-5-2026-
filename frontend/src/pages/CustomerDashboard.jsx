@@ -18,6 +18,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import HistoryIcon from "@mui/icons-material/History";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import LogoutIcon from "@mui/icons-material/Logout";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 import { useNavigate } from "react-router-dom";
 
@@ -57,6 +58,34 @@ function CustomerDashboard() {
           overflow: "hidden"
         }}
       >
+
+
+
+        
+{/* BACK TO LOGIN BUTTON */}
+<Box
+  sx={{
+    px: 3,
+    pt: 2,
+    display: "flex",
+    justifyContent: "flex-start",
+    backgroundColor: "#fff",
+  }}
+>
+  <Button
+    variant="outlined"
+    startIcon={<ArrowBackIcon />}
+    onClick={() => navigate("/")}
+    sx={{
+      textTransform: "none",
+      fontWeight: "bold",
+      borderRadius: 2,
+    }}
+  >
+    Back to Login
+  </Button>
+</Box>
+
 
         {/* Header */}
 

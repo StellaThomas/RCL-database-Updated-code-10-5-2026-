@@ -10,6 +10,7 @@
     "@mui/x-data-grid": "^7.29.9",
     "axios": "^1.8.4",
     "dayjs": "^1.11.21",
+    "html2pdf.js": "^0.14.0",
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.8",
     "react": "^18.2.0",
@@ -24,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "obfuscate": "node obfuscate.js"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +48,7 @@
   },
   "devDependencies": {
     "ajv": "^8.12.0",
-    "ajv-keywords": "^5.1.0"
+    "ajv-keywords": "^5.1.0",
+    "javascript-obfuscator": "^5.9.0"
   }
 }
